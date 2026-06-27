@@ -1,66 +1,31 @@
-## Foundry
+# MousengNFT
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A simple ERC-721 NFT smart contract built with **Foundry** during the **TechCrush Web3/Blockchain Development Cohort 7**.
 
-Foundry consists of:
+## Tech Stack
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+* Solidity
+* Foundry
+* OpenZeppelin
 
-## Documentation
+## Build
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+```bash
+forge build
 ```
 
-### Test
+## Test
 
-```shell
-$ forge test
+```bash
+forge test
 ```
 
-### Format
+## Deploy
 
-```shell
-$ forge fmt
+```bash
+forge script script/DeployMousengNFT.s.sol:DeployMousengNFT --rpc-url <RPC_URL> --private-key <PRIVATE_KEY> --broadcast
 ```
 
-### Gas Snapshots
+## License
 
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+MIT
